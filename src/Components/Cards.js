@@ -70,7 +70,6 @@ const Cards = () => {
     },
   ];
   const [Deets, setDeets] = useState([]);
-  const numb = 2;
   // const PersonNames = cardInfo.map(person => person.text) ;
   const renderCard = (card) => {
     return (
@@ -96,7 +95,6 @@ const Cards = () => {
       <div className="grid">{cardInfo.map(renderCard)}</div>
       <Router>
         <Route exact path="/">
-          <p>hello</p>
         </Route>
       </Router>
     </div>

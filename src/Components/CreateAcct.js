@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Form, Button, Col, InputGroup, FormControl } from "react-bootstrap";
 function CreateAccount() {
   return (

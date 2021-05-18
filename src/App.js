@@ -1,5 +1,5 @@
 import React from "react";
-import CreateAccount from "./Components/CreateAccount";
+import CreateAcct from './Components/CreateAcct';
 import LeaveArev from "./Components/LeaveArev";
 import Sign from "./Components/Sign";
 import Home from "./Components/Home";
@@ -11,9 +11,9 @@ function App() {
     <div>
       <Navigation />
       <Switch>
+        <Route path="/createaccount" component={CreateAcct} />
         <Route exact path="/" component={Home} />
         <Route path="/sign" component={Sign} />
-        <Route path="/createaccount" component={CreateAccount} />
         <Route path="/leavearev" component={LeaveArev} />
       </Switch>
     </div>

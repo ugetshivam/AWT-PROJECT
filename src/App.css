@@ -23,3 +23,6 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+.align-items-center{
+  padding: 18%;
+}
