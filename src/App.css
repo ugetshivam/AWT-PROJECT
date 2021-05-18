@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+.Topdiv {
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  margin: 40px;
+  margin-top: 60px;
+  background-color: rgba(159, 73, 167, 0.205);
+}
+
+.TopContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+}
+.grid {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
