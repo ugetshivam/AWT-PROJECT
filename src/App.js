@@ -10,16 +10,15 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
-      <div>
-        <Navigation />
-        <Switch>
-          <Route path="/createaccount" component={CreateAcct} />
-          <Route exact path="/" component={Home} />
-          <Route path="/sign" component={Sign} />
-          <Route path="/leavearev" component={LeaveArev} />
-        </Switch>
-      </div>
+    <div className="Mainapp">
+      <Navigation />
+
+      <Switch>
+        <Route path="/createaccount" component={CreateAcct} />
+        <Route exact path="/" component={Home} />
+        <Route path="/sign" component={Sign} />
+        <Route path="/leavearev" component={LeaveArev} />
+      </Switch>
       <Social />
     </div>
   );

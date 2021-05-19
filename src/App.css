@@ -27,10 +27,10 @@
   padding: 18%;
 }
 .social-container {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   width: 100%;
-  background: #eee;
+  bottom: 0px;
+  background: white;
   padding: 25px 50px;
 }
 a.social {
@@ -56,3 +56,6 @@ a.twitter {
 a.instagram {
   color: black;
 }
+/* .Mainapp {
+  display: flex;
+} */

@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
-
+import Social from "./Social";
 function Home() {
   return (
     <div>
