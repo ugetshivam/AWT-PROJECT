@@ -2,43 +2,41 @@ import React from "react";
 import { Form, Button, Col, InputGroup, FormControl } from "react-bootstrap";
 function CreateAccount() {
   return (
-    <Form>
-      <Form.Row className="align-items-center">
-        <Col xs="auto">
-          <Form.Label htmlFor="inlineFormInput" srOnly>
-            Name
-          </Form.Label>
-          <Form.Control
-            className="mb-2"
-            id="inlineFormInput"
-            placeholder="Jane Doe"
-          />
-        </Col>
-        <Col xs="auto">
-          <Form.Label htmlFor="inlineFormInputGroup" srOnly>
-            Username
-          </Form.Label>
-          <InputGroup className="mb-2">
-            <InputGroup.Prepend>
-              <InputGroup.Text>@</InputGroup.Text>
-            </InputGroup.Prepend>
-            <FormControl id="inlineFormInputGroup" placeholder="Username" />
-          </InputGroup>
-        </Col>
-        <Col xs="auto">
-          <Form.Check
-            type="checkbox"
-            id="autoSizingCheck"
-            className="mb-2"
-            label="Remember me"
-          />
-        </Col>
-        <Col xs="auto">
-          <Button type="submit" className="mb-2">
-            Submit
-          </Button>
-        </Col>
+    <Form
+      style={{
+        marginTop: "100px",
+        width: "50%",
+        marginLeft: "auto",
+        marginRight: "auto",
+      }}
+    >
+      <Form.Row>
+        <Form.Group as={Col} controlId="formGridEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+        </Form.Group>
+
+        <Form.Group as={Col} controlId="formGridPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control type="password" placeholder="Password" />
+        </Form.Group>
       </Form.Row>
+
+      <Form.Group controlId="formGridUsername">
+        <Form.Label>Username</Form.Label>
+        <Form.Control placeholder="Username" />
+      </Form.Group>
+
+      <Form.Row>
+        <Form.Group as={Col} controlId="formGridDOB">
+          <Form.Label>DOB</Form.Label>
+          <Form.Control type="date" placeholder="Date of birth" />
+        </Form.Group>
+      </Form.Row>
+
+      <Button variant="primary" type="submit">
+        Sign Up
+      </Button>
     </Form>
   );
 }

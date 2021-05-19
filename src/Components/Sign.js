@@ -1,10 +1,46 @@
 import React from "react";
-
+import { Form, Button, Col, InputGroup, FormControl } from "react-bootstrap";
 function Sign() {
   return (
-    <div>
-      <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="" /> 
-    </div>
+    <Form>
+      <Form.Row className="align-items-center">
+        <Col xs="auto">
+          <Form.Label htmlFor="inlineFormInputGroup" srOnly>
+            Username
+          </Form.Label>
+          <InputGroup className="mb-2">
+            <InputGroup.Prepend>
+              <InputGroup.Text>@</InputGroup.Text>
+            </InputGroup.Prepend>
+            <FormControl id="inlineFormInputGroup" placeholder="Username" />
+          </InputGroup>
+        </Col>
+        <Col xs="auto">
+          <Form.Label htmlFor="inlineFormInput" srOnly>
+            Password
+          </Form.Label>
+          <Form.Control
+            type="password"
+            className="mb-2"
+            id="inlineFormInput"
+            placeholder="Password"
+          />
+        </Col>
+        <Col xs="auto">
+          <Form.Check
+            type="checkbox"
+            id="autoSizingCheck"
+            className="mb-2"
+            label="Remember me"
+          />
+        </Col>
+        <Col xs="auto">
+          <Button type="submit" className="mb-2">
+            Submit
+          </Button>
+        </Col>
+      </Form.Row>
+    </Form>
   );
 }
 
