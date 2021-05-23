@@ -5,16 +5,10 @@ function metro() {
   return (
     <div className="contain">
       <h2>Metro Exodus</h2>
-      <iframe
-        width="703"
-        height="395"
-        src="https://www.youtube.com/embed/fbbqlvuovQ0?autoplay=1"
-        title="YouTube video player"
-        frameborder="2"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>
+      <div className="Ty-container">
+      
+      
+      <p className="gametext">
         After the attack on D6, Artyom becomes disillusioned with the constant
         infighting and corruption within the Metro and leaves the Spartan Order.
         He soon becomes obsessed with proving that other human survivors exist
@@ -33,6 +27,16 @@ function metro() {
         locomotives, the "Aurora", with the aid of a defected Hansa train
         engineer called Yermak.
       </p>
+      <iframe
+        width="703"
+        height="395"
+        src="https://www.youtube.com/embed/fbbqlvuovQ0?autoplay=1"
+        title="YouTube video player"
+        frameborder="2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      </div>
       <div className="rev">
         <h1>What did you think about the game?</h1>
         <textarea name="review" id="got_review" cols="80" rows="10"></textarea>

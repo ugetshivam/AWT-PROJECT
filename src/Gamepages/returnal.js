@@ -5,16 +5,9 @@ function returnal() {
   return (
     <div className="contain">
       <h2>Returnal</h2>
-      <iframe
-        width="703"
-        height="395"
-        src="https://www.youtube.com/embed/k4nSLa8a588?autoplay=1"
-        title="YouTube video player"
-        frameborder="2"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>
+      <div className="Ty-container">
+      
+      <p className="gametext">
         After crash-landing on this shape-shifting world, Selene must search
         through the barren landscape of an ancient civilization for her escape.
         Isolated and alone, she finds herself fighting tooth and nail for
@@ -33,6 +26,16 @@ function returnal() {
         yourself off in the face of defeat and take on new, evolving challenges
         with every rebirth.
       </p>
+      <iframe
+        width="703"
+        height="395"
+        src="https://www.youtube.com/embed/k4nSLa8a588?autoplay=1"
+        title="YouTube video player"
+        frameborder="2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      </div>
       <div className="rev">
         <h1>What did you think about the game?</h1>
         <textarea name="review" id="got_review" cols="80" rows="10"></textarea>

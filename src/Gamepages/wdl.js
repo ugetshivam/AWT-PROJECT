@@ -4,17 +4,10 @@ import { Button } from "react-bootstrap";
 function wdl() {
   return (
     <div className="contain">
+      
       <h2>Watch Dogs Legion</h2>
-      <iframe
-        width="703"
-        height="395"
-        src="https://www.youtube.com/embed/L20nioDjCxU?autoplay=1"
-        title="YouTube video player"
-        frameborder="2"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>
+      <div className="Ty-container">
+      <p className="gametext">
         The London branch of DedSec, led by Sabine Brandt and her newly crafted
         AI, Bagley, detect armed intruders planting explosives in the Houses of
         Parliament. DedSec operative Dalton Wolfe goes to defuse the bombs and
@@ -28,6 +21,16 @@ function wdl() {
         responsible for the chaos, effectively causing social and political
         unrest amongst the city's inhabitants.
       </p>
+      <iframe
+        width="703"
+        height="395"
+        src="https://www.youtube.com/embed/L20nioDjCxU?autoplay=1"
+        title="YouTube video player"
+        frameborder="2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      </div>
       <div className="rev">
         <h1>What did you think about the game?</h1>
         <textarea name="review" id="got_review" cols="80" rows="10"></textarea>

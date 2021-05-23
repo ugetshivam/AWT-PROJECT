@@ -5,16 +5,9 @@ function got() {
   return (
     <div className="contain">
       <h2>Ghost of Tsushima</h2>
-      <iframe
-        width="703"
-        height="395"
-        src="https://www.youtube.com/embed/b_iU_gnn28U?autoplay=1"
-        title="YouTube video player"
-        frameborder="2"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>
+      <div className="Ty-container">
+      
+      <p className="gametext">
         In the late 13th century, the Mongol empire has laid waste to entire
         nations along their campaign to conquer the East. Tsushima Island is all
         that stands between mainland Japan and a massive Mongol invasion fleet
@@ -26,6 +19,16 @@ function got() {
         have shaped him as a warrior to forge a new path, the path of the Ghost,
         and wage an unconventional war for the freedom of Tsushima.
       </p>
+      <iframe
+        width="703"
+        height="395"
+        src="https://www.youtube.com/embed/b_iU_gnn28U?autoplay=1"
+        title="YouTube video player"
+        frameborder="2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      </div>
       <div className="rev">
         <h1>What did you think about the game?</h1>
         <textarea name="review" id="got_review" cols="80" rows="10"></textarea>
