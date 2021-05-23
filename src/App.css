@@ -8,7 +8,7 @@
 .box {
   margin: 40px;
   margin-top: 60px;
-  background-color: whitesmoke;
+  background-color: rgb(189, 140, 221);
 }
 
 .TopContainer {
@@ -31,12 +31,15 @@
   bottom: 0;
   width: 100%;
   height: 60px; /* Height of the footer */
-  background: white;
+  background: linear-gradient(to bottom, #2c756f 0%, #83ecd5 100%);
 }
 a.social {
   margin: 0 1rem;
   transition: transform 250ms;
   display: inline-block;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 a.social:hover {
   transform: translateY(-2px);
@@ -59,3 +62,13 @@ a.instagram {
 /* .Mainapp {
   display: flex;
 } */
+.dropGames {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(112, 167, 169, 1) 100%
+  );
+  align-items: center;
+  font-family: cursive;
+}

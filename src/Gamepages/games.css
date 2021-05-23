@@ -1,14 +1,18 @@
 .contain {
-  margin-top: 60px;
+  margin-top: 55px;
   text-align: center;
   padding-top: 5px;
   width: 100%;
 }
-.Ty-container{
+.contain h2 {
+  font-family: cursive;
+  color: rgb(218, 123, 197);
+}
+.Ty-container {
   display: flex;
   width: 100%;
 }
-.gametext{
+.gametext {
   width: 50%;
 }
 iframe {
@@ -17,8 +21,12 @@ iframe {
   display: block;
 }
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
 }
 textarea {
   resize: both;
+}
+.rev h1 {
+  font-family: cursive;
+  color: rgb(218, 123, 197);
 }

@@ -36,9 +36,6 @@ function App() {
         <Route path="/hitman" component={hitman} />
         <Route path="/metro" component={metro} />
       </Switch>
-      <div id="footer">
-        <Social />
-      </div>
     </div>
   );
 }

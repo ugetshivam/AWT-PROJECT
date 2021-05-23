@@ -1,46 +1,43 @@
-import React from "react";
-import { Form, Button, Col, InputGroup, FormControl } from "react-bootstrap";
+import React, { useState } from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import "./Login.css";
 function Sign() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function validateForm() {
+    return email.length > 0 && password.length > 0;
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
   return (
-    <Form>
-      <Form.Row className="align-items-center">
-        <Col xs="auto">
-          <Form.Label htmlFor="inlineFormInputGroup" srOnly>
-            Username
-          </Form.Label>
-          <InputGroup className="mb-2">
-            <InputGroup.Prepend>
-              <InputGroup.Text>@</InputGroup.Text>
-            </InputGroup.Prepend>
-            <FormControl id="inlineFormInputGroup" placeholder="Username" />
-          </InputGroup>
-        </Col>
-        <Col xs="auto">
-          <Form.Label htmlFor="inlineFormInput" srOnly>
-            Password
-          </Form.Label>
+    <div className="Login">
+      <Form onSubmit={handleSubmit}>
+        <Form.Group size="lg" controlId="email">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            autoFocus
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </Form.Group>
+        <Form.Group size="lg" controlId="password">
+          <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
-            className="mb-2"
-            id="inlineFormInput"
-            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
-        </Col>
-        <Col xs="auto">
-          <Form.Check
-            type="checkbox"
-            id="autoSizingCheck"
-            className="mb-2"
-            label="Remember me"
-          />
-        </Col>
-        <Col xs="auto">
-          <Button type="submit" className="mb-2">
-            Submit
-          </Button>
-        </Col>
-      </Form.Row>
-    </Form>
+        </Form.Group>
+        <Button block size="lg" type="submit" disabled={!validateForm()}>
+          Login
+        </Button>
+      </Form>
+    </div>
   );
 }
 

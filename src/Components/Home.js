@@ -7,7 +7,7 @@ function Home() {
       <h1 style={{ marginTop: "70px", textAlign: "center" }}>Editor's Pick</h1>
       <hr />
       <Cards />
-      <hr />
+      <Social />
     </div>
   );
 }
