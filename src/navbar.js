@@ -18,7 +18,9 @@ class Navigation extends Component {
           bg="dark"
           variant="dark"
         >
-          <Navbar.Brand href="/">Fake-Critic</Navbar.Brand>
+          <Navbar.Brand href="/" className="shimmer">
+            Fake-Critic
+          </Navbar.Brand>
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

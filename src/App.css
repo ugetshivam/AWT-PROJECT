@@ -7,8 +7,9 @@
 }
 .box {
   margin: 40px;
-  margin-top: 60px;
-  background-color: rgb(189, 140, 221);
+  margin-top: 55px;
+  /* background-color: rgb(189, 140, 221); */
+  background: transparent;
 }
 
 .TopContainer {
@@ -71,4 +72,9 @@ a.instagram {
   );
   align-items: center;
   font-family: cursive;
+}
+p {
+  font: Helvetica, Sans-Serif;
+  /* letter-spacing: -5px; */
+  color: rgba(196, 77, 97, 0.5);
 }

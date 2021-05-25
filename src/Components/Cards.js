@@ -78,6 +78,7 @@ const Cards = () => {
         key={card.id}
         className="box"
         onClick={() => setDeets(card)}
+        border="light"
       >
         <Card.Body>
           <Card.Link href={card.pageLink}>
@@ -98,9 +99,6 @@ const Cards = () => {
   return (
     <div>
       <div className="grid">{cardInfo.map(renderCard)}</div>
-      <Router>
-        <Route exact path="/"></Route>
-      </Router>
     </div>
   );
 };

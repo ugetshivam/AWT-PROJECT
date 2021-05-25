@@ -5,9 +5,11 @@
   width: 100%;
 }
 .contain h2 {
-  font-family: cursive;
-  color: rgb(218, 123, 197);
+  font: 50px Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  color: rgba(0, 0, 255, 0.5);
 }
+
 .Ty-container {
   display: flex;
   width: 100%;
@@ -27,6 +29,7 @@ textarea {
   resize: both;
 }
 .rev h1 {
-  font-family: cursive;
-  color: rgb(218, 123, 197);
+  font: 50px Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  color: rgba(59, 59, 117, 0.5);
 }
